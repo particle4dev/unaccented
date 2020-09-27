@@ -15,6 +15,13 @@ git:
 script:
 - yarn test:coverage
 
+cache:
+  - yarn
+
+after_success:
+  - 'if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then exit 0; fi'
+  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
+
 notifications:
   email:
     recipients:
