@@ -1,0 +1,7 @@
+coverage
+src
+.gitignore
+.git
+.editorconfig
+jest.config.js
+*.config.js

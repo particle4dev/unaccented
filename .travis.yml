@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- 14
+cache:
+- yarn
+git:
+  depth: 1
+script:
+- yarn test:coverage
+- cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+- yarn build
+notifications:
+  email:
+    recipients:
+    - particle4dev@gmail.com
+    on_success: never
+    on_failure: always
+deploy:
+  provider: npm
+  email: particle4dev@gmail.com
+  on:
+    tags: true
+    repo: particle4dev/unaccented
+  api_token:
+    secure: TsH1uuT7YHWiifko5Nm1RVkrgHnXWD37GDT5dsoB6Hu/2Uk+1IZQerDf/WPnV8C/B8ofrKpgVV/qlhk8rYNWjVDMl4pXHbe6U14quhsxgZN5JHTuX+UhQgJawLII4n4QF2XCUUFJDGH7E/KnnOLvermwG8gSUl1IRSgroyOtngcaaM0FzWAq5aJFGIuKDF+erbjdU7Pr+BZv9PoZtuFIizzfJvS2tvYU6oZ0a77qBX6KcRAIAY/m+4SvsdVCL7IdzPNV/phHijQSOJruzaTjYQPSxUFea+ClKPLVorLJuLFPd1JzHDiJyki89LlkRWVw575fBMC+7RnD1MRNS/P468HIiFJ+2nNmJXax6FMCqfKKOTS9Qtn+TTS4N8TXd10nRtWXRwC1AFU2zZJn9xPyyLOaHTmD5F/T8OYbFHUY2JjH9sG9cCsus5K5ITRgxLXglsJYA1En6udtmnegKubU8oXMIy9+lfAuXxe++oW33iei6nSYthtXbs0nCKE9K0gLQkJu77z2L78lMIpocM1ZYbnXr0zKbKPpqE0LnOeT1pae0BQ5mjSWOthGxWCej7qN1kTbgIfYveIWqkt9hzpsd9CvMwJHmFRDrttH5XtLLM2LkpNKKM3STO3wPQHX1AgLE2fvKxUFJnxUUY6amcdCI4Tx/GEZ9D/1ItMSTlnjQDQ=
+  skip_cleanup: 'true'

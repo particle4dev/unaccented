@@ -1,0 +1,25 @@
+{
+  "extends": "@penguin-ui/global-configuration/typescript/tsconfig.jest.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "target": "es2017",
+    "typeRoots": [
+      "../../@types",
+      "../../node_modules/@types",
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "custom.d.ts",
+    "**/src/*.ts",
+    "**/src/*.js",
+    "**/test/*.ts",
+    "**/test/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**/*",
+    "**/__mocks__/**/*"
+  ]
+}
