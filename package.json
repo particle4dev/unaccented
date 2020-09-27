@@ -14,6 +14,7 @@
     "build:es": "tsc -p . --outDir ./es --module es2015 --moduleResolution Node",
     "test": "yarn test:tdd",
     "test:tdd": "jest src",
+    "test:coverage": "yarn test:tdd --coverage",
     "clean": "rimraf es/* lib/*"
   },
   "devDependencies": {
