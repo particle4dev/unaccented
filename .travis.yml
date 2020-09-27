@@ -28,11 +28,11 @@ notifications:
     on_success: never
     on_failure: always
 
-# deploy:
-#   provider: npm
-#   email: particle4dev@gmail.com
-#   on:
-#     repo: particle4dev/global-configuration
-#     tags: true
-#   api_token:
-#     secure: Q3/fbkrT4lSFrp0EMELG9JguLYBloJ+XcPjNc5IAu5/T6xDBZNkcNCkJPFmukVGghiCuYMxPIGqWs6PptnOJplMljEUn6e4BCQgfOxFsqKKgZL7GGl7a3F+0JV2sR6SxPnA1tEyQ6WWcU39mROlf79+9ZC4s6vIi7mOsXQKtJs/t4Ei9MLF9RQdnCoUt86+0+HnPaFmBIMm71uOVe4iQyHF+8DqCds0d92k9uPZ5BlouLI/Mhh6r/sOEugGaW2kmbn3+fMCFEwQs/oL1SrgKT+Tn8g7CZgkDk9MdJ/U7rrip4/4FkawjJWK8VQWFf//HBSdpH6bNIJt4wA38EfqQczW05RrOLcns56uhcvtVgjUTJA5sZgfGf6FXcpavUzTP5ZIoREht0iE1zOUH1FgHEgsaFLaZah2dA2Fi7R1PuHH8hzC3jsBjgNeIUuzj3YDctCody6pGAQQbPZZQ+w1idu92ZYa12zczjAwMfOo0Mng7MPwdCLlGgerPQ25UicB02Mar3hrXxKZyxf70vGlmQZ4m1JdbG3K5BlidHxtlZYoUSyyqQOcGQIiVhwmoF49cekp+gU68nTgUT+ElSxUT6Xs8RkqWIP02HAdTMZLXhowr4A3kGq6lDDiqQyjMCN3vTgYlulWFFTE+ZG/MVY+oYp0IIzowRx37m8jVxefKvzQ=
+deploy:
+  provider: npm
+  email: particle4dev@gmail.com
+  on:
+    repo: particle4dev/unaccented
+    # tags: true
+  api_token:
+    secure: Q3/fbkrT4lSFrp0EMELG9JguLYBloJ+XcPjNc5IAu5/T6xDBZNkcNCkJPFmukVGghiCuYMxPIGqWs6PptnOJplMljEUn6e4BCQgfOxFsqKKgZL7GGl7a3F+0JV2sR6SxPnA1tEyQ6WWcU39mROlf79+9ZC4s6vIi7mOsXQKtJs/t4Ei9MLF9RQdnCoUt86+0+HnPaFmBIMm71uOVe4iQyHF+8DqCds0d92k9uPZ5BlouLI/Mhh6r/sOEugGaW2kmbn3+fMCFEwQs/oL1SrgKT+Tn8g7CZgkDk9MdJ/U7rrip4/4FkawjJWK8VQWFf//HBSdpH6bNIJt4wA38EfqQczW05RrOLcns56uhcvtVgjUTJA5sZgfGf6FXcpavUzTP5ZIoREht0iE1zOUH1FgHEgsaFLaZah2dA2Fi7R1PuHH8hzC3jsBjgNeIUuzj3YDctCody6pGAQQbPZZQ+w1idu92ZYa12zczjAwMfOo0Mng7MPwdCLlGgerPQ25UicB02Mar3hrXxKZyxf70vGlmQZ4m1JdbG3K5BlidHxtlZYoUSyyqQOcGQIiVhwmoF49cekp+gU68nTgUT+ElSxUT6Xs8RkqWIP02HAdTMZLXhowr4A3kGq6lDDiqQyjMCN3vTgYlulWFFTE+ZG/MVY+oYp0IIzowRx37m8jVxefKvzQ=
