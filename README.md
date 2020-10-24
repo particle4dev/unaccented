@@ -21,8 +21,8 @@ yarn add @penguin-ui/unaccented
 ```js
 const unaccented = require('@penguin-ui/unaccented')
 
-console.log(unaccented(`chau xin chao co chu! sa chao co chu di con.`))
-// print "Chau xin chao co chu! Sa chao co chu di con."
+console.log(unaccented(`Cháu xin chào cô chú! Sa chào cô chú đi con.`))
+// print "chau xin chao co chu! sa chao co chu di con."
 ```
 
 ## License
