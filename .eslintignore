@@ -1,0 +1,7 @@
+**/node_modules/*
+**/es/*
+**/lib/*
+**/coverage/*
+package.json
+tsconfig.json
+tsconfig.test.json
