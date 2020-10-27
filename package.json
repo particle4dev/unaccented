@@ -1,6 +1,6 @@
 {
   "name": "@penguin-ui/unaccented",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "module": "./es/index.js",
@@ -17,6 +17,8 @@
     "build": "concurrently \"yarn build:commonjs\" \"yarn build:es\"",
     "build:commonjs": "tsc -p . --outDir ./lib --module commonjs",
     "build:es": "tsc -p . --outDir ./es --module es2015 --moduleResolution Node",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --fix --ext .js,.ts",
     "test": "yarn test:tdd",
     "test:tdd": "jest src",
     "test:coverage": "yarn test:tdd --coverage",
@@ -25,13 +27,16 @@
   "devDependencies": {
     "@penguin-ui/global-configuration": "^1.2.0",
     "@types/lodash": "^4.14.162",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "concurrently": "^5.3.0",
     "coveralls": "^3.1.0",
-    "jest": "26.5.3",
+    "eslint": "^7.12.1",
+    "jest": "26.6.1",
     "lodash": "^4.17.15",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.0",
-    "typescript": "4.0.3"
+    "ts-jest": "^26.4.3",
+    "typescript": "4.0.5"
   },
   "peerDependencies": {
     "lodash": "^4.17.15"
