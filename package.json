@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@penguin-ui/global-configuration": "^1.2.0",
-    "@types/lodash": "^4.14.162",
+    "@types/lodash": "^4.14.165",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "concurrently": "^5.3.0",
